@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Web Portal</title>
+	<meta name="description" content="Modern responsive web portal" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+	<a class="skip-link" href="#main">Skip to content</a>
+	<header class="site-header" role="banner">
+		<div class="container header-inner">
+			<div class="brand">
+				<img src="https://dummyimage.com/40x40/0ea5e9/ffffff&text=W" alt="Portal logo" class="logo" />
+				<span class="brand-name">Web Portal</span>
+			</div>
+			<nav class="primary-nav" aria-label="Primary navigation">
+				<button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+				<ul id="nav-menu" class="nav-list">
+					<li><a href="#features">Features</a></li>
+					<li><a href="#dashboard">Dashboard</a></li>
+					<li><a href="#pricing">Pricing</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main id="main" class="site-main" role="main">
+		<section class="hero" aria-labelledby="hero-title">
+			<div class="container hero-inner">
+				<div class="hero-copy">
+					<h1 id="hero-title">All your tools in one modern portal</h1>
+					<p class="lead">Fast, accessible, and responsive by default. Build dashboards, manage content, and collaborate.</p>
+					<div class="hero-actions">
+						<a class="btn btn-primary" href="#get-started">Get Started</a>
+						<a class="btn btn-secondary" href="#learn-more">Learn More</a>
+					</div>
+				</div>
+				<div class="hero-art" aria-hidden="true">
+					<div class="card metric">
+						<div class="metric-label">Active Users</div>
+						<div class="metric-value">12,480</div>
+					</div>
+					<div class="card metric">
+						<div class="metric-label">Uptime</div>
+						<div class="metric-value">99.98%</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="features" class="section features" aria-labelledby="features-title">
+			<div class="container">
+				<h2 id="features-title">Features</h2>
+				<ul class="feature-grid">
+					<li class="card">
+						<h3>Analytics</h3>
+						<p>Understand your users with real-time dashboards and reports.</p>
+					</li>
+					<li class="card">
+						<h3>Workflows</h3>
+						<p>Automate routine tasks and ship faster with visual pipelines.</p>
+					</li>
+					<li class="card">
+						<h3>Integrations</h3>
+						<p>Connect your favorite tools with a few clicks.</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section id="dashboard" class="section dashboard" aria-labelledby="dashboard-title">
+			<div class="container">
+				<h2 id="dashboard-title">Dashboard Preview</h2>
+				<div class="grid two-col">
+					<div class="card">
+						<h3>Sales</h3>
+						<p class="muted">Last 30 days</p>
+						<div class="placeholder-chart"></div>
+					</div>
+					<div class="card">
+						<h3>Incidents</h3>
+						<p class="muted">This quarter</p>
+						<div class="placeholder-chart"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="pricing" class="section pricing" aria-labelledby="pricing-title">
+			<div class="container">
+				<h2 id="pricing-title">Pricing</h2>
+				<div class="grid three-col">
+					<article class="card plan">
+						<h3>Starter</h3>
+						<p class="price">$0<span class="price-period">/mo</span></p>
+						<ul class="plan-list">
+							<li>Basic analytics</li>
+							<li>Community support</li>
+						</ul>
+						<a href="#" class="btn btn-outline">Choose</a>
+					</article>
+					<article class="card plan plan-featured" aria-label="Pro plan">
+						<h3>Pro</h3>
+						<p class="price">$24<span class="price-period">/mo</span></p>
+						<ul class="plan-list">
+							<li>Advanced dashboards</li>
+							<li>Email support</li>
+							<li>Automation</li>
+						</ul>
+						<a href="#" class="btn btn-primary">Choose</a>
+					</article>
+					<article class="card plan">
+						<h3>Enterprise</h3>
+						<p class="price">Custom</p>
+						<ul class="plan-list">
+							<li>SLA & SSO</li>
+							<li>Dedicated support</li>
+							<li>Security reviews</li>
+						</ul>
+						<a href="#contact" class="btn btn-outline">Contact us</a>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section id="contact" class="section contact" aria-labelledby="contact-title">
+			<div class="container">
+				<h2 id="contact-title">Contact</h2>
+				<form class="card form" action="#" method="post">
+					<div class="grid two-col">
+						<label>
+							<span>Name</span>
+							<input type="text" name="name" autocomplete="name" required />
+						</label>
+						<label>
+							<span>Email</span>
+							<input type="email" name="email" autocomplete="email" required />
+						</label>
+						<label class="full-row">
+							<span>Message</span>
+							<textarea name="message" rows="5" required></textarea>
+						</label>
+					</div>
+					<div class="form-actions">
+						<button type="submit" class="btn btn-primary">Send</button>
+					</div>
+				</form>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer" role="contentinfo">
+		<div class="container footer-inner">
+			<p>© <span id="year"></span> Web Portal. All rights reserved.</p>
+			<ul class="footer-links">
+				<li><a href="#">Privacy</a></li>
+				<li><a href="#">Terms</a></li>
+				<li><a href="#">Status</a></li>
+			</ul>
+		</div>
+	</footer>
+
+	<script>
+		const yearEl = document.getElementById('year');
+		yearEl.textContent = new Date().getFullYear();
+
+		const toggle = document.querySelector('.nav-toggle');
+		const menu = document.getElementById('nav-menu');
+		toggle.addEventListener('click', () => {
+			const expanded = toggle.getAttribute('aria-expanded') === 'true';
+			toggle.setAttribute('aria-expanded', String(!expanded));
+			menu.classList.toggle('open');
+		});
+	</script>
+</body>
+</html>
